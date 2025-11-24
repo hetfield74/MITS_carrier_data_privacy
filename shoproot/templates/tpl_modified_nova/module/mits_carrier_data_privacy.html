@@ -1,0 +1,41 @@
+{config_load file="$language/lang_$language.conf" section="create_account"}
+{config_load file="lang_`$language`.custom"}
+{config_load file="lang_`$language`.section" section="create_account"}
+<h1>{$MODULE_MITS_CARRIER_DATA_PRIVACY_CANCEL_TITLE}</h1>
+{if $MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_NOT_AVAILABLE}
+  <div class="errormessage">{$MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_NOT_AVAILABLE}</div>
+  <div class="button_right cf"><div class="cssButtonPos4">{$BUTTON_CONTINUE}</div></div>
+{else}
+  {if $success_message != ''}
+    <div class="infomessage">{$success_message}</div>
+    <div class="button_right cf"><div class="cssButtonPos4">{$BUTTON_CONTINUE}</div></div>
+  {else}
+    <p>{$MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_INFO}</p>
+    {if $error != ''}<div class="errormessage">{$error}</div>{/if}
+    {$FORM_ACTION}
+    <div class="contentbox">
+
+      <div class="subline">{#text_data#}&nbsp; <span class="fields_required">({#text_hint#})</span></div>
+
+      <div class="field_item_1"><label><span class="field_text">{$MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_EMAILADDRESS}</span>{$INPUT_EMAIL|replace:"type=\"text\"":"type=\"email\""}<span class="inputRequirement">{$smarty.const.TEXT_ICON_ASTERISK}</span></label></div>
+      <div class="field_item_1"><label><span class="field_text">{$MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_CONFIRM_EMAILADDRESS}</span>{$INPUT_CONFIRM_EMAIL|replace:"type=\"text\"":"type=\"email\""}<span class="inputRequirement">{$smarty.const.TEXT_ICON_ASTERISK}</span></label></div>
+      <div class="field_item_1"><label><span class="field_text">{$MITS_DATA_CARRIER_PRIVACY_TEXT_CANCEL_DELIVERYPOSTCODE}</span>{$INPUT_CODE}</label></div>
+
+      {if $VVIMG}
+      <div class="field_item_1 vvcode_img"><span class="field_text">{#text_sec_code#}</span>{$VVIMG}</div>
+      {/if}
+      {if $INPUT_CODE}
+      <div class="field_item_1 vvcode_sec"><label><span class="field_text">{#text_inp_code#}</span>{$INPUT_VVCODE}<span class="inputRequirement">{$smarty.const.TEXT_ICON_ASTERISK}</span></label></div>
+      {/if}
+
+    </div>
+
+    <div class="button_row">
+      <div class="br_left">
+        <div class="br_btn_1">{$BUTTON_SUBMIT}</div>
+      </div>
+    </div>
+
+    {$FORM_END}
+  {/if}
+{/if}

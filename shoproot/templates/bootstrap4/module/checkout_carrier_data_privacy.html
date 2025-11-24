@@ -1,0 +1,17 @@
+{config_load file="$language/lang_$language.conf" section="checkout_payment"}
+{config_load file="$language/lang_$language.conf" section="checkout_navigation"}
+{config_load file="lang_`$language`.custom"}
+{config_load file="lang_`$language`.section" section="checkout_payment"}
+{if isset($CHECKBOX_DATACONSENT)}
+<br class="clearfix" />
+<div class="card-body" id="carrier_data_privacy_box">
+  <h4>{$smarty.const.MODULE_MITS_CARRIER_DATA_PRIVACY_CHECKOUT_TITLE}</h4>
+  <div class="checkbox clearfix">
+    <label for="dataconsent">
+      {if $CHECKBOX_DATACONSENT}{$CHECKBOX_DATACONSENT}{/if}
+      <strong>&nbsp;{$smarty.const.MODULE_MITS_CARRIER_DATA_PRIVACY_CHECKOUT_TEXT}</strong>
+    </label>
+  </div>
+</div>
+<br class="clearfix" />
+{/if}

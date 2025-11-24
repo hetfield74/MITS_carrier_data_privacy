@@ -1,0 +1,19 @@
+{config_load file="$language/lang_$language.conf" section="checkout_payment"}
+{config_load file="$language/lang_$language.conf" section="checkout_navigation"}
+{config_load file="lang_`$language`.custom"}
+{config_load file="lang_`$language`.section" section="checkout_payment"}
+
+{if isset($CHECKBOX_DATACONSENT)}
+<div class="checkout_accept" id="carrier_data_privacy_box">
+    <h4 class="checkout">{$smarty.const.MODULE_MITS_CARRIER_DATA_PRIVACY_CHECKOUT_TITLE}</h4>
+    <div class="checkoutconditions">
+      <div class="cus_check">
+        {$CHECKBOX_DATACONSENT}
+        <label for="dataconsent"><strong>{$smarty.const.MODULE_MITS_CARRIER_DATA_PRIVACY_CHECKOUT_TEXT}</strong></label>
+      </div>
+    </div>
+</div>
+{literal}
+<style>#mits_carrier_data{font-style:italic;text-decoration:underline}</style>
+{/literal}
+{/if}
