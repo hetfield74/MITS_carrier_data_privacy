@@ -31,7 +31,7 @@ $lang_array = array(
     den der Kunde im Verlauf des Bestellprozesses in Ihrem Online-Shop durch Setzen eines H&auml;kchens mittels Opt-In Checkbox ausdr&uuml;cklich best&auml;tigt.</p>
     <div style="text-align:center;">
       <small>Nur auf Github gibt es immer die aktuellste Version des Moduls!</small><br />
-      <a style="background:#6a9;color:#444" target="_blank" href="https://github.com/hetfield74/MITS_Embedded_Videos" class="button" onclick="this.blur();">MITS Embedded Videos on Github</a>
+      <a style="background:#6a9;color:#444" target="_blank" href="https://github.com/hetfield74/MITS_carrier_data_privacy" class="button" onclick="this.blur();">MITS_carrier_data_privacy on Github</a>
     </div>
     <p>Bei Fragen, Problemen oder W&uuml;nschen zu diesem Modul oder auch zu anderen Anliegen rund um die modified eCommerce Shopsoftware nehmen Sie einfach Kontakt zu uns auf:</p> 
     <div style="text-align:center;"><a style="background:#6a9;color:#444" target="_blank" href="https://www.merz-it-service.de/Kontakt.html" class="button" onclick="this.blur();">Kontaktseite auf MerZ-IT-SerVice.de</strong></a></div>
