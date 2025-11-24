@@ -19,14 +19,14 @@ require_once DIR_FS_LANGUAGES . $_SESSION['language'] . '/admin/' . FILENAME_PAR
 
 require_once DIR_FS_LANGUAGES . $_SESSION['language'] . '/admin/' . FILENAME_MODULES;
 
-defined('TABLE_HEADING_CARRIER_ADDRESS') or define('TABLE_HEADING_CARRIER_ADDRESS', 'Address for DSGVO');
-defined('TEXT_INFO_CARRIER_ADDRESS') or define('TEXT_INFO_CARRIER_ADDRESS', 'Address of the parcel service provider for DSGVO');
+defined('TABLE_HEADING_CARRIER_ADDRESS') || define('TABLE_HEADING_CARRIER_ADDRESS', 'Adresse pour le RGPD');
+defined('TEXT_INFO_CARRIER_ADDRESS') || define('TEXT_INFO_CARRIER_ADDRESS', 'Adresse du transporteur de colis pour le RGPD');
 
-defined('BUTTON_EDIT_CARRIER_TO_SHIPPING') or define('BUTTON_EDIT_CARRIER_TO_SHIPPING', 'Edit assignment');
-defined('BUTTON_NEW_CARRIER_TO_SHIPPING') or define('BUTTON_NEW_CARRIER_TO_SHIPPING', 'Create new assignment');
+defined('BUTTON_EDIT_CARRIER_TO_SHIPPING') || define('BUTTON_EDIT_CARRIER_TO_SHIPPING', 'Modifier l\'affectation');
+defined('BUTTON_NEW_CARRIER_TO_SHIPPING') || define('BUTTON_NEW_CARRIER_TO_SHIPPING', 'Créer une nouvelle affectation');
 
-defined('TABLE_HEADING_PRIVACY_FOR_CARRIER') or define('TABLE_HEADING_PRIVACY_FOR_CARRIER', 'Consent to the transmission of the e-mail address / telephone number according to DSGVO granted for:');
-defined('TABLE_INFO_PRIVACY_FOR_CARRIER') or define('TABLE_INFO_PRIVACY_FOR_CARRIER', 'Approval granted to the following parcel service:');
+defined('TABLE_HEADING_PRIVACY_FOR_CARRIER') || define('TABLE_HEADING_PRIVACY_FOR_CARRIER', 'Consentement au transfert de l\'adresse e-mail/du numéro de téléphone conformément au RGPD donné pour :');
+defined('TABLE_INFO_PRIVACY_FOR_CARRIER') || define('TABLE_INFO_PRIVACY_FOR_CARRIER', 'Consentement donné pour le transporteur de colis suivant :');
 
-defined('TABLE_HEADING_IP_ADDRESS') or define('TABLE_HEADING_IP_ADDRESS', 'IP-Address');
-defined('TABLE_HEADING_DATE') or define('TABLE_HEADING_DATE', 'Date');
+defined('TABLE_HEADING_IP_ADDRESS') || define('TABLE_HEADING_IP_ADDRESS', 'Adresse IP');
+defined('TABLE_HEADING_DATE') || define('TABLE_HEADING_DATE', 'Date');
