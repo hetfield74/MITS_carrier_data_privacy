@@ -36,7 +36,7 @@ class mits_carrier_data_privacy
     {
         $this->code = 'mits_carrier_data_privacy';
         $this->name = 'MODULE_' . strtoupper($this->code);
-        $this->version = '1.4.1';
+        $this->version = '1.4.2';
 
         $this->sort_order = defined($this->name . '_SORT_ORDER') ? constant($this->name . '_SORT_ORDER') : 0;
         $this->enabled = defined($this->name . '_STATUS') && (constant($this->name . '_STATUS') == 'true');
